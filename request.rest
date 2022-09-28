@@ -1,0 +1,28 @@
+GET http://localhost:6000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVmlzaGFsIiwiaWF0IjoxNjYzMzI1OTk0LCJleHAiOjE2NjMzMjYwMTl9.NS8p2pqwg8boWR8HPoPhB0mKk8oAZEBSAnFC4xAh6Pw
+###
+
+DELETE  http://localhost:5000/logout
+Content-Type: application/json
+
+{
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVmlzaGFsIiwiaWF0IjoxNjYzMzEzMTAyLCJleHAiOjE2NjMzMTMxMjd9.3L0I4QCHRdPHVHFwPngVBikyZ8ylIGeh9yYZsYzleYw"
+}
+
+###
+
+POST http://localhost:5000/token
+Content-Type: application/json
+
+{
+   "token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVmlzaGFsIiwiaWF0IjoxNjYzMzIyMzkxfQ.iIyQ2sEEbUUtmtX7B9oZ4RNoQj4ZsVHZ2qgfaAM5UOA"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "Vishal"
+}
